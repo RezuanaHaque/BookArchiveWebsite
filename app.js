@@ -16,7 +16,6 @@ const searchBook = () => {
 }
 
 const displayBooks = books => {
-    const searchResult = document.getElementById('search-result');
     const row = document.getElementById('row');
     // for clearing the previous result 
     row.textContent = '';
@@ -49,11 +48,12 @@ const displayBooks = books => {
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><b>Author Name: </b>${book.author_name}</li>
                         <li class="list-group-item"><b>First Publish Year: </b>${book.first_publish_year}</li>
-                        <li class="list-group-item"><b>Publisher: </b>${book.publisher[0]}</li>
+                        <li class="list-group-item"><b>Publisher: </b>${book.publisher}</li>
                     </ul>
                 </div>
                 `
             }
+            // when a book contains img 
             else {
                 div.innerHTML = `    
                     <div class="card border border-3 h-100 " style="width: 18rem;">
@@ -64,7 +64,7 @@ const displayBooks = books => {
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><b>Author Name: </b>${book.author_name}</li>
                         <li class="list-group-item"><b>First Publish Year: </b>${book.first_publish_year}</li>
-                        <li class="list-group-item"><b>Publisher: </b>${book.publisher[0]}</li>
+                        <li class="list-group-item"><b>Publisher: </b>${book.publisher}</li>
                     </ul>
                 </div>
                     `
