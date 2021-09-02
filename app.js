@@ -7,7 +7,7 @@ const searchBook = () => {
     searchField.value = '';
     // showing the spinner after search button clicked 
     document.getElementById("spinner").style.display = "block";
-    const url = `http://openlibrary.org/search.json?q=${searchText}`;
+    const url = `https://openlibrary.org/search.json?q=${searchText}`;
     // fetching the whole data 
     fetch(url)
         .then(res => res.json())
