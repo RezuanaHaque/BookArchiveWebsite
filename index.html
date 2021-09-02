@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
     <!-- css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>MY BOOKS</title>
 </head>
 
-<body class="bg-secondary">
+<body class="bg-dark text-white">
     <!-- header  -->
-    <section>
-        <h1 class="text-center">Search Your Book</h1>
+    <header class="text-white">
+        <h1 class="text-center my-5 text-uppercase fs-1 ">Search Your Book</h1>
         <div class="input-group mb-3 w-50 mx-auto">
             <input id="searchfield" type="text" class="form-control" placeholder="Search By Book Name"
                 aria-label="Recipient's username" aria-describedby="button-addon2">
@@ -28,21 +29,25 @@
                 <span class="visually-hidden">Loading...</span>
             </div>
         </div>
-    </section>
-    <section id="search-result" class="container">
+    </header>
+    <!-- the part where results will be shown -->
+    <main>
+        <section id="search-result" class="container">
 
-        <h3 id="total-result" class="text-center mb-4"></h3>
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4" id="row">
+            <h5 id="total-result" class="text-center my-5"></h5>
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4 my-4" id="row">
 
-        </div>
-    </section>
+            </div>
+        </section>
+    </main>
 
     <!-- js  -->
-
     <script src="app.js" defer></script>
+    <!-- bootstrap js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
